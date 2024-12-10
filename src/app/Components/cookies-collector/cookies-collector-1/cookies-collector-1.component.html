@@ -1,0 +1,18 @@
+<div id="cookie-collector-1" class="cookie-container w-full sm:w-96 fixed z-50 bottom-0 sm:bottom-5 rtl:sm:left-5 ltr:sm:right-5 p-5 rounded-md border dark:border-slate-800 shadow-sm hover:shadow-md bg-white dark:bg-slate-800 duration-200 transition-transform">
+    <div class="cookie-inner">
+        <div class="head flex items-center justify-between gap-5 mb-5">
+            <div class="head-inner flex items-center gap-5">
+                <figure class="w-10">
+                    <img class="w-full" src="cookie.png" alt="cookie.png">
+                </figure>
+                <h5 class="text-xl font-bold tracking-tight text-slate-950 dark:text-slate-50">Cookie Policy</h5>
+            </div>
+            <button (click)="close('cookie-collector-1')" class="fa-solid fa-xmark text-slate-400 cursor-pointer hover:text-slate-950 dark:hover:text-white duration-200"></button>
+        </div>
+        <div class="content mb-5">
+            <p class="text-lg font-thin text-slate-400">By visiting this site, you consent to the use of cookies, which are employed to enrich your browsing
+                experience.</p>
+        </div>
+        <button class="btn btn-primary">Accept All</button>
+    </div>
+</div>

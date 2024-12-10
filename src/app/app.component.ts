@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CookiesCollectorComponent } from "./Components/cookies-collector/cookies-collector.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [CookiesCollectorComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'common.use.app';

@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    html,body {
+        min-height: 100vh;
+        @apply bg-white dark:bg-slate-700
+    }
+    .btn {
+        @apply px-5 py-2 active:scale-95 duration-200;
+
+        &-primary {
+            @apply border border-blue-500 rounded-md text-slate-50 bg-blue-500 hover:text-blue-500 hover:bg-transparent;
+        }
+    }
+}
